@@ -204,8 +204,8 @@ betas3 <- betasPS[ 1:nb1+nb2+1 + 1 ]
 # f1 <- B1s%*%betas1
 # f2 <- B2s%*%betas2
 
-my.mu.pre <- beta0 + 1 * betas1 + (B1s*1) %*% betas2 + (B1s*0) %*% betas3
-my.mu.nonpre <- beta0 + 0 * betas1 + (B1s*0) %*% betas2 + (B1s*1) %*% betas3
+my.mu.pre <- betas0 + 1 * betas1 + (B1s*1) %*% betas2 + (B1s*0) %*% betas3
+my.mu.nonpre <- betas0 + 0 * betas1 + (B1s*0) %*% betas2 + (B1s*1) %*% betas3
 
 resultsGAM2 =
   data.table(
